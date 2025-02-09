@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="cstyles.css">
+</head>
+<body>
+
+    <!-- Đăng ký tên -->
+    <div id="register-container">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="username" placeholder="Your Name">
+        <button onclick="saveUsername()">Confirm</button>
+    </div>
+
+    <!-- Ứng dụng chat -->
+    <div id="chat-app" style="display: none;">
+
+        <!-- Danh sách bạn bè -->
+        <div id="friend-container">
+            <h2>Find Friends to Chat</h2>
+            <input type="text" id="friend-name" placeholder="Enter a name">
+            <button onclick="addFriend()">Add Friend</button>
+
+            <h3>Search Friends</h3>
+            <input type="text" id="search" placeholder="Search..." oninput="searchFriends()">
+
+            <h3>Friend List</h3>
+            <div id="friend-list"></div>
+        </div>
+
+        <!-- Khu vực chat -->
+        <div id="chat-container">
+            <div id="chat-box">Test Chat</div>
+            <div id="input-container">
+                <input type="text" id="user-input" placeholder="Type your message..." />
+                <button id="send-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="cscript.js"></script>
+</body>
+</html>

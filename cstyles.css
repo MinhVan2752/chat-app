@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Định dạng phần đăng ký */
+#register-container {
+    text-align: center;
+}
+
+/* Ẩn ứng dụng chat khi chưa đăng ký */
+#chat-app {
+    display: flex;
+    flex-direction: row; /* Chia layout friend list & chat */
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Danh sách bạn bè nằm bên trái */
+#friend-container {
+    width: 250px;
+    margin-right: 20px;
+}
+
+/* Friend list */
+#friend-list {
+    width: 100%;
+}
+
+.friend {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+/* Giữ nguyên giao diện chat */
+#chat-container {
+    width: 80%;
+    max-width: 400px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+#input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+
+  #send-button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #send-button:hover {
+    background-color: #0056b3;
+  }
+
+  #user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
